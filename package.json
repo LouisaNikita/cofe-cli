@@ -1,0 +1,23 @@
+{
+  "name": "fed-cli",
+  "version": "1.0.0",
+  "description": "project scaffold",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LOUISA",
+  "license": "ISC",
+  "bin": {
+    "fed": "./bin/fed.js"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "download-git-repo": "^1.1.0",
+    "glob": "^7.1.3",
+    "inquirer": "^6.2.0"
+  }
+}
