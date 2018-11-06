@@ -67,6 +67,8 @@ inquirer.prompt([
     console.log('copypath', copyPath);
     download(rootName).then(target => {
       console.log('go', target);
+
+      // to do 模版
     }).catch(err => {
       console.log('go err', err);
     })
