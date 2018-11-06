@@ -11,7 +11,7 @@ console.log('initing a new project')
 
 inquirer.prompt([
   {
-    type: 'rawlist',
+    type: 'list',
     name: 'projectType',
     message: '想要新建什么项目？',
     choices: [
