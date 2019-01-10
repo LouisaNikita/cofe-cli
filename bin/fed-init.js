@@ -2,8 +2,11 @@ const program = require('commander');
 const path = require('path');
 const fs = require('fs');
 const glob = require('glob');
-const download = require('../lib/download');
 const inquirer = require('inquirer');
+const chalk = require('chalk')
+const logSymbols = require('log-symbols');
+const download = require('../lib/download');
+const generator = require('../lib/generator');
 
 program.usage('<project-name>').parse(process.argv)
 
@@ -19,6 +22,10 @@ inquirer.prompt([
       'react-hybrid',
       'react-pc'
     ]
+  }, {
+    name: 'contentPath',
+    message: '项目contentPath vue-be项目必填',
+    default: '{{ contentPath }}'
   }
 ]).then(answers => {
   console.log('inquirer answer', answers)
@@ -44,7 +51,7 @@ inquirer.prompt([
   if (list.length) {
     let existPro = list.filter(name => {
       const fileName = path.resolve(process.cwd(), path.join('.', name));
-      console.log('filter fileName', fileName);
+      // console.log('filter fileName', fileName);
       const isDir = fs.statSync(fileName).isDirectory();
       return name.indexOf(projectName) !== -1 && isDir;
     })
@@ -67,11 +74,18 @@ inquirer.prompt([
     console.log('copypath', copyPath);
     download(rootName).then(target => {
       console.log('go', target);
+      console.log('go generator', target );
 
-      // to do 模版
+      const metadata = {
+        projectName,
+        ...answers
+      }
+
+      return generator( metadata, target );
+    }).then( () => {
+      console.log(logSymbols.success, chalk.green('===================  创建成功:) ======================'))
     }).catch(err => {
-      console.log('go err', err);
+      console.log(logSymbols.error, chalk.red(`创建失败 :( ${err}`))
     })
   }
 })
-
