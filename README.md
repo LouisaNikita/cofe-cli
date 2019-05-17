@@ -1,11 +1,10 @@
 # fed-cli
 通用脚手架工具
 
-## 开发运行
-
-``` npm link ```
-
 ## Usage
+
+### 安装
+``` npm i cofe-cli -g ```
 
 ### 初始化项目
 
@@ -33,5 +32,9 @@
 ### help
 
 ``` fed / fed -h ```
+
+## 开发运行
+
+``` npm link ```
 
 
