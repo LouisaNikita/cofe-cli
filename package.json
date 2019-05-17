@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "project scaffold",
   "main": "index.js",
-  "repository": "https://github.com/LouisaNikita/fed-cli.git",
+  "repository": "https://github.com/LouisaNikita/cofe-cli.git",
   "directories": {
     "lib": "lib"
   },
