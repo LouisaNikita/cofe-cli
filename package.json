@@ -13,7 +13,7 @@
   "author": "louisanikita",
   "license": "ISC",
   "bin": {
-    "fed": "./bin/fed.js"
+    "cofe": "./bin/cofe.js"
   },
   "engines": {
     "node": "11.0.0"

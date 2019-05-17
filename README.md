@@ -1,6 +1,6 @@
 ![](https://img.shields.io/npm/dt/localeval.svg)
 ![](https://img.shields.io/npm/l/express.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com)
-# fed-cli
+# cofe-cli
 通用脚手架工具
 
 ## Usage
@@ -10,7 +10,7 @@
 
 ### 初始化项目
 
-``` fed init project-name ```
+``` cofe init project-name ```
 
 会被提示选择一种项目模版，选择后会在执行命令当前目录 生成一个新项目
 
@@ -24,7 +24,7 @@
 
 ##### 配置脚手架
 
-``` fed config tempalte-name template-git-url ```
+``` cofe config tempalte-name template-git-url ```
 
 ##### 自定义模版规则
 
@@ -33,7 +33,7 @@
 
 ### help
 
-``` fed / fed -h ```
+``` cofe / cofe -h ```
 
 ## 开发运行
 
