@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "project scaffold",
   "main": "index.js",
+  "repository": "https://github.com/LouisaNikita/fed-cli.git",
   "directories": {
     "lib": "lib"
   },
