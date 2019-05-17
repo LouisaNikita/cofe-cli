@@ -18,9 +18,8 @@ inquirer.prompt([
     name: 'projectType',
     message: '想要新建什么项目？',
     choices: [
-      'vue-be',
-      'react-hybrid',
-      'react-pc'
+      'vue-spa',
+      'react-spa'
     ]
   }, {
     name: 'contentPath',
@@ -72,7 +71,7 @@ inquirer.prompt([
     // 预留，处理子命令  
     let copyPath = path.resolve(process.cwd(), path.join('.', rootName));
     console.log('copypath', copyPath);
-    download(rootName).then(target => {
+    download(rootName, answers.projectType).then(target => {
       console.log('go', target);
       console.log('go generator', target );
 
