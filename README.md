@@ -1,11 +1,12 @@
+![](https://img.shields.io/npm/dt/localeval.svg)
+![](https://img.shields.io/npm/l/express.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com)
 # fed-cli
 通用脚手架工具
 
-## 开发运行
-
-``` npm link ```
-
 ## Usage
+
+### 安装
+``` npm i cofe-cli -g ```
 
 ### 初始化项目
 
@@ -33,5 +34,9 @@
 ### help
 
 ``` fed / fed -h ```
+
+## 开发运行
+
+``` npm link ```
 
 
