@@ -1,4 +1,4 @@
-![](https://img.shields.io/npm/dw/localeval.svg)
+![](https://img.shields.io/npm/dt/localeval.svg)
 ![](https://img.shields.io/npm/l/express.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com)
 # fed-cli
 通用脚手架工具
