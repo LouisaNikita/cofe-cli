@@ -1,6 +1,6 @@
 {
   "name": "cofe-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "project scaffold",
   "main": "index.js",
   "repository": "https://github.com/LouisaNikita/cofe-cli.git",
